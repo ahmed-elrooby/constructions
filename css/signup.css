@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-padding: 100px;
+  --main-color: rgb(0, 131, 143);
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #00bcd4;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #3f51b5e6;
+}
+.form {
+    width: 447px;
+    box-shadow: 0px 0px 12px 0px;
+    height: 592px;
+    padding: 0px 31px;
+    z-index: 1;
+    position: relative;
+
+}
+@media (max-width:991px) {
+    .form {
+
+    width: 354px;
+    height: 628px;
+    }
+    form .name input[type="text"],
+form .name input[type="email"],
+form .email input[type="email"],
+form .password input[type="password"],
+form .confirm input[type="password"],
+form .address input[type="text"],
+form .record input[type="text"],
+form .number input[type="number"],
+form .country input[type="text"],
+form .company input[type="text"],
+form .phone input[type="number"]{
+    width: 298px !important;
+}
+.form h2{
+    margin-top: 13px !important;
+}
+.form .linked{
+    margin-bottom: 10px;
+}
+
+
+}
+.form h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 5px;
+
+}
+.form .linked{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 26px;
+}
+.form .linked input{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 7px 18px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 18px;
+    
+}
+
+
+.form .linked .active{
+background-color: var(--main-color);
+color: white;
+}
+.form .customerform{
+    display: none;
+}
+.form form .name,
+.form form .email,
+.form form .password,
+.form form .confirm,
+.form form .address,
+.form form .record,
+.form form .company,
+.form form .country,
+.form form .number,
+.form form .phone
+
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+form label
+{
+    text-transform: capitalize;
+    color: white;
+    font-size: 16px;
+}
+form .name input[type="text"],
+form .name input[type="email"],
+form .email input[type="email"],
+form .password input[type="password"],
+form .confirm input[type="password"],
+form .address input[type="text"],
+form .record input[type="text"],
+form .number input[type="number"],
+form .country input[type="text"],
+form .company input[type="text"],
+form .phone input[type="number"]
+
+
+{
+    width: 332px;
+    padding: 7px 35px;
+    border: none;
+    
+}
+form input:focus{
+    outline: none;
+
+}
+
+form input::placeholder{
+    text-transform: capitalize;
+}
+form input[type="submit"]{
+    display: block;
+    margin: 17px auto 13px;
+    padding: 6px 0px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background-color: #3f51b5;
+    color: white;
+    font-weight: bold;
+    width: 176px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+form .links{
+        display: flex;
+    justify-content: center;
+    margin: 5px auto 10px;
+    gap: 48px;
+}
+form .links a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: #2d85afbf;
+}
+form .foot{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+form .foot .have{
+    text-decoration: none;
+    color: #369a36;
+}
+form .foot .sign{
+    text-decoration: none;
+    width: fit-content;
+    padding: 7px 14px;
+    border: 1px solid;
+    background-color: var(--main-color);
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+

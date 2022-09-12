@@ -1,0 +1,290 @@
+:root {
+  --main-padding: 100px;
+  --main-color: rgb(0, 131, 143);
+  --main-transition:all 0.3s ease
+  
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(249, 249, 249);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  background-color: #ddd;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium screen  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screen  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.profile{
+      padding-top: 100px;
+    background: var(--main-color);
+    padding-bottom: 100px;
+}
+.profile .container {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    text-align: center;
+}
+ .profile .container .profile-image {
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 418px;
+    background: white;
+    padding: 10px 0;
+    height: 344px;
+    max-width: 100%;
+    margin: auto;
+}
+   .profile .container .profile-image .img-cont {
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+}
+  .profile .container .profile-image .img-cont a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+ .profile .container .profile-image h1 {
+     margin-left: 22px;
+    font-size: 19px;
+    color: var(--main-color);
+}
+ .profile .container .profile-image .img-cont p {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+ .profile .container .profile-image .img-cont .upload{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    padding: 10px;
+    margin-top: 27px;
+    border-radius: 6px;
+    color: white;
+    text-transform: capitalize;
+    transition: var(--main-transition);
+}
+ .profile .container .profile-image .img-cont .upload:hover{
+    background: rgb(0 131 143 / 73%);
+
+ }
+
+ .profile .container .profile-details{
+background-color: white;
+    margin-top: 13px;
+    padding: 15px;
+border-radius: 5px;
+max-width: 100%;
+margin: auto;
+   }
+   .profile .container .profile-details input{
+    border:1px solid;
+  outline: none;
+  transition:var(--main-transition) ;
+  max-width: 100%;
+  }
+   .profile .container .profile-details input:focus{
+    outline: 1px solid var(--main-color);
+    border: none;
+   }
+
+ .profile .container .profile-details input[type="text"]{
+   height:30px;
+       border: 1px solid;
+
+ }
+ .profile .container .profile-details label{
+    display: flex;
+    margin-bottom: -12px;
+   }
+.profile .container .profile-details .text-one {
+    width: 400px;
+    margin-left: -83px;
+}
+    .profile .container .profile-details .one{
+          display: flex;
+    gap: 20px;
+        padding: 10px 0;
+
+    }
+.profile .container .profile-details .one .one-d input[type="text"]{
+      width: 199px;
+      height:30px;
+          border: 1px solid;
+
+
+
+}
+.profile .container .profile-details .one .one-se input[type="text"]{
+      width: 183px;
+      height:30px;
+      border: 1px solid;
+
+
+
+}
+  .profile .container .profile-details .two{
+          display: flex;
+    gap: 20px;
+        padding: 10px 0;
+
+    }
+    .profile .container .profile-details .two .two-d input[type="text"]{
+      width: 199px;
+      height:30px;
+      border: 1px solid;
+
+
+
+}
+.profile .container .profile-details .two .two-se input[type="text"]{
+      width: 183px;
+          border: 1px solid;
+
+
+}
+.profile .container .profile-details .three-text{
+    width: 404px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: -73px;
+}
+    .profile .container .profile-details .three{
+          display: flex;
+    gap: 20px;
+        padding: 10px 0;
+
+    }
+       .profile .container .profile-details .three .three-d input[type="number"]{
+      width: 199px;
+      height:30px;
+          border: 1px solid;
+
+
+
+}
+.profile .container .profile-details .three .three-se input[type="date"]{
+      width: 183px;
+      height: 30px;
+          border: 1px solid;
+
+
+}
+.profile .container .profile-details a{
+    display: flex;
+    background: var(--main-color);
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.profile .container .profile-details a:hover{
+
+      background: rgb(0 131 143 / 73%);
+
+}
+
+/* start media query  */
+@media (min-width:0px) and (max-width:991px){
+  .profile .container{
+flex-direction: column;
+text-align: center;
+margin: auto;
+max-width: 100%;
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile .container .profile-details .three .three-se input[type="date"] {
+    width: 139px !important;
+}
+.profile .container .profile-details .three .three-d input[type="number"] {
+    width: 142px;
+}
+.profile .container .profile-details .two .two-d input[type="text"] {
+    width: 144px;
+
+}
+.profile .container .profile-details .one .one-d input[type="text"] {
+    width: 151px;
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile .container .profile-details .text-one {
+    width: 308px !important;
+    margin-left: -5px;
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile .container .profile-details .one .one-se input[type="text"] {
+    width: 130px !important;
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile .container .profile-details .two .two-se input[type="text"] {
+    width: 147px !important;
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile-details .three-text {
+    width: 320px !important;
+        margin-left: 0px !important;
+
+}
+}
+@media (min-width: 0px) and (max-width: 500px){
+.profile .container .profile-details .three .three-se input[type="date"] {
+    width: 139px !important;
+}
+}
+/* end media query  */

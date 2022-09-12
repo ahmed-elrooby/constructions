@@ -1,0 +1,108 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji"; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium screen  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large screen  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* start title  */
+
+
+
+
+.pay {
+  margin-top: 50px;
+  padding-bottom: 28px;
+
+  background-color: #EEE3E3
+}
+.pay .container {
+  display: flex;
+  justify-content: center;
+}
+.pay .container .box {
+  padding-top: 28px;
+  box-shadow: 0 0.25rem 0.8rem rgba(0, 0, 0, 0.1) !important;
+}
+.pay .container .box img {
+  max-width: 100%;
+  width: 400px;
+  clip-path: ellipse(100% 90% at 50% 10%);
+}
+.pay .container .box .de h2 {
+  font-weight: normal;
+  margin-left: 8px;
+  margin-top: 10px;
+  font-family: 'Libre Baskerville', serif;
+  color: #6B6B6B;
+  font-weight: bold;
+
+}
+.pay .container .box .de li {
+  font-size: 16px;
+  padding: 10px 10px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.pay .container .box .sen {
+  padding: 10px;
+}
+.pay .container .box .sen input[type="submit"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid;
+  font-size: 19px;
+  text-transform: capitalize;
+  outline: none;
+  transition: 0.3s;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--main-color);
+  color: white;
+  border:none;
+}
+.pay .container .box .sen input[type="submit"]:hover {
+  background-color: #00B2C2;
+  color: white;
+}
